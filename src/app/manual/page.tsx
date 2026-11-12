@@ -12,7 +12,6 @@ import {
   Move,
   Power,
   Coins,
-  LogOut,
   AlertTriangle,
   CheckCircle2,
   Send,
@@ -153,7 +152,20 @@ export default function ManualPage() {
               </h2>
               <div className="grid gap-3 sm:grid-cols-2">
                 {[
-                  "Download and run Honest.exe (no installer needed).",
+                  (
+                    <span key="download">
+                      Download and run{" "}
+                      <a
+                        href="https://drive.google.com/drive/folders/1m3sY6kfQ4VsKNRh_VRIDjmfaZD9dvJTi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-foreground underline underline-offset-2 hover:text-foreground/80"
+                      >
+                        Honest.exe
+                      </a>{" "}
+                      (no installer needed).
+                    </span>
+                  ),
                   "Open the settings panel using the gear icon button.",
                   "Enter the Email and Password you created during website checkout.",
                   "Click Sign In to authenticate.",

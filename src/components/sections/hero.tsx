@@ -33,7 +33,12 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
-          <a href="/Honest.exe" download="Honest.exe" className="w-full sm:w-auto">
+          <a
+            href="https://drive.google.com/drive/folders/1m3sY6kfQ4VsKNRh_VRIDjmfaZD9dvJTi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
             <Button size="lg" className="h-11 w-full px-7 text-sm font-semibold shadow-xs">
               Download Honest.exe
             </Button>

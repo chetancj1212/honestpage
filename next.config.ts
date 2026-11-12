@@ -12,6 +12,20 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async redirects() {
+    return [
+      {
+        source: "/Honest.exe",
+        destination: "https://drive.google.com/drive/folders/1m3sY6kfQ4VsKNRh_VRIDjmfaZD9dvJTi",
+        permanent: false,
+      },
+      {
+        source: "/honest.exe",
+        destination: "https://drive.google.com/drive/folders/1m3sY6kfQ4VsKNRh_VRIDjmfaZD9dvJTi",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

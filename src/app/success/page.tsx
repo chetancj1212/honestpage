@@ -55,7 +55,11 @@ export default function SuccessPage() {
                       Download the standalone Windows executable. No installation or setup required.
                     </p>
                     <div className="mt-3">
-                      <a href="/Honest.exe" download="Honest.exe">
+                      <a
+                        href="https://drive.google.com/drive/folders/1m3sY6kfQ4VsKNRh_VRIDjmfaZD9dvJTi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Button size="sm" className="h-9 gap-1.5 px-4 text-xs font-semibold">
                           <Download className="size-3.5" /> Download Honest.exe
                         </Button>

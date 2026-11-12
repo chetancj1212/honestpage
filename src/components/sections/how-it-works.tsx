@@ -10,8 +10,9 @@ const steps = [
     desc: "Get the lightweight standalone Windows application. Compatible with Windows 10 & 11 (64-bit). No installers or dependencies needed.",
     action: (
       <a
-        href="/Honest.exe"
-        download="Honest.exe"
+        href="https://drive.google.com/drive/folders/1m3sY6kfQ4VsKNRh_VRIDjmfaZD9dvJTi"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs font-bold text-foreground underline-offset-4"
       >
         Download App Binary →
