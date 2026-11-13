@@ -10,7 +10,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Send, Sparkles } from "lucide-react";
 import { CheckoutModal } from "@/components/checkout-modal";
 
 const plans = [
@@ -167,6 +167,45 @@ export function Pricing() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        <div className="mx-auto mt-8 max-w-[880px] rounded-2xl border border-border/80 bg-card/70 p-6 shadow-sm backdrop-blur-sm sm:flex sm:items-center sm:justify-between gap-6">
+          <div className="space-y-1.5 mb-4 sm:mb-0 text-left">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1">
+                <Sparkles className="size-3 text-amber-500" /> Free Trial Pass
+              </span>
+              <span className="rounded-full bg-red-500/10 px-2 py-0.5 font-mono text-[11px] font-bold text-red-600 dark:text-red-400 border border-red-500/25">
+                Before 16 Nov
+              </span>
+            </div>
+            <h3 className="text-base sm:text-lg font-bold text-foreground">
+              Request Free Credentials for Testing
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Want to test Honest on your upcoming quizzes and MCQ assignments? Get free trial credentials{" "}
+              <span className="font-bold text-red-600 dark:text-red-400">
+                (before 16 Nov)
+              </span>
+              .
+            </p>
+          </div>
+          <div className="shrink-0 flex flex-col items-stretch sm:items-end gap-1.5">
+            <a
+              href="https://t.me/Contira?text=Hi%2C%20I%20would%20like%20to%20request%20free%20credentials%20for%20testing%20on%20quizzes%20and%20MCQ%20assignments"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            >
+              <Button size="lg" className="h-11 w-full px-6 text-xs sm:text-sm font-semibold gap-2 shadow-xs">
+                <Send className="size-4" />
+                Request Free Credentials on Telegram →
+              </Button>
+            </a>
+            <span className="text-[11px] text-muted-foreground text-center sm:text-right font-mono">
+              Support: @Contira
+            </span>
+          </div>
         </div>
 
         <p className="mx-auto mt-8 max-w-lg text-center text-sm text-muted-foreground">
